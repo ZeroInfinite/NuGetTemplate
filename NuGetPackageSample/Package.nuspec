@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NuGetPackageSample</id>
+    <version>0.0.0</version>
+    <title>NuGetPackageSample</title>
+    <authors>ZeroInfinite</authors>
+    <owners>ZeroInfinite</owners>
+    <description>
+      A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.
+    </description>
+    <releaseNotes>
+      My release notes.
+    </releaseNotes>
+    <summary>
+      A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.
+    </summary>
+    <language>en-GB</language>
+    <projectUrl>https://nugettemplate.codeplex.com/</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://nugettemplate.codeplex.com/license</licenseUrl>
+    <copyright>Copyright  2017 ZeroInfinite</copyright>
+    <dependencies>
+      <!-- targetFramework value will be similar to the .NET folders located under lib, build, tools and content -->
+      <!-- create a new group XML tag only if you're targeting a different framework. In this example all the dependencies require .NET 4 -->
+      <group targetFramework="net40">
+        <!-- this is a dependency on another NuGet package which you can reference from https://www.nuget.org/ -->
+        <!-- package id is the actual name of the NuGet Package. The version is the one you have a dependency on -->
+        <dependency id="Unity" version="4.0.1" />
+        <!-- you can add multiple dependencies here as long as they require the same .NET Framework version -->
+      </group>
+      <!-- an example on how you can target the same dependency for different .NET Frameworks, in this case, 4.6.2 -->
+      <group targetFramework="net462">
+        <dependency id="Unity" version="4.0.1" />
+      </group>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+    <file src="ReadMe.txt" target="ReadMe.txt" />
+  </files>
+</package>
