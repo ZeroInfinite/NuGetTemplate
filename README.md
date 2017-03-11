@@ -1,4 +1,4 @@
-# NuGetTemplate
+# NuGetTemplate (we've moved to CodePlex at https://nugettemplate.codeplex.com/)
 
 This project has been moved to CodePlex (https://www.codeplex.com/). New and further updates to this project will now be posted on CodePlex at https://nugettemplate.codeplex.com/ with the documentation located at https://nugettemplate.codeplex.com/documentation
 
